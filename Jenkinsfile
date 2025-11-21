@@ -12,7 +12,7 @@ pipeline {
             agent { label 'worker-node' }
             steps {
                 echo "===== CHECKING OUT FROM GITHUB ====="
-                git branch: 'main', url: 'https://github.com/sinchanac2617/springboot_without_docker.git'
+                git branch: 'main', url: 'https://github.com/Vishnu2663/springboot_cicd_jenkins_project.git'
             }
         }
 
