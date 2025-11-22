@@ -11,7 +11,7 @@ pipeline {
         SERVER_PORT = "8080"                     // Spring Boot port
 
         // Jenkins SSH credentials (must match ID in Jenkins)
-        SSH_CRED_ID = "app-server-ssh"
+        SSH_CRED_ID = "app-server-ssh-deploy"
 
         // Git repo
         GIT_REPO   = "https://github.com/Vishnu2663/springboot_cicd_jenkins_project.git"
