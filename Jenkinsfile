@@ -8,7 +8,7 @@ pipeline {
         DEPLOY_DIR  = "/opt/myapp"
         JAR_NAME    = "demo-0.0.1-SNAPSHOT.jar"
         SERVER_PORT = "8080"
-        SSH_CRED_ID = "app-server-ssh-ubuntu"
+        SSH_CRED_ID = "app-server-ssh"
         GIT_REPO    = "https://github.com/Vishnu2663/springboot_cicd_jenkins_project.git"
         GIT_BRANCH  = "main"
     }
