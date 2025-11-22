@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        APP_SERVER_IP = '172.31.16.31'
+        APP_SERVER_IP = '172.31.16.31'  //private ip of app_server
         DEPLOY_USER   = 'deploy'
-        JAR_NAME      = 'demo-0.0.1-SNAPSHOT.jar '
+        JAR_NAME      = 'demo-0.0.1-SNAPSHOT.jar '  //jar file name in target
         REMOTE_PATH   = '/opt/myapp/app.jar'
     }
 
