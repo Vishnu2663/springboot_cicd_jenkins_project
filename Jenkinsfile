@@ -78,11 +78,12 @@ pipeline {
             sh """
                 set -ex
                 ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${APP_SERVER} \\
-                  'sudo -n systemctl restart ${APP_NAME}.service && sudo -n systemctl status ${APP_NAME}.service --no-pager'
+                  'sudo -n /usr/bin/systemctl restart ${APP_NAME}.service && sudo -n /usr/bin/systemctl status ${APP_NAME}.service --no-pager'
             """
         }
     }
 }
+
 
 
         stage('Health Check') {
