@@ -5,13 +5,13 @@ pipeline {
     environment {
         APP_NAME    = "myapp"                    // systemd service name: myapp.service
         APP_SERVER  = "172.31.25.125"            // PRIVATE IP of app server
-        DEPLOY_USER = "deploy"                   // user on app server
-        DEPLOY_DIR  = "/opt/myapp"               // directory on app server
+        DEPLOY_USER = "ubuntu"                   // user on app server
+        DEPLOY_DIR  = "/home/ubuntu/myapp"               // directory on app server
         JAR_NAME    = "demo-0.0.1-SNAPSHOT.jar"  // jar file name
         SERVER_PORT = "8080"                     // Spring Boot port
 
         // Jenkins SSH credentials (must match ID in Jenkins)
-        SSH_CRED_ID = "app-server-ssh-deploy"
+        SSH_CRED_ID = "app-server-ssh-ubuntu"
 
         // Git repo
         GIT_REPO   = "https://github.com/Vishnu2663/springboot_cicd_jenkins_project.git"
