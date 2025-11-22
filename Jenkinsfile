@@ -4,7 +4,7 @@ pipeline {
     // ========= ENVIRONMENT CONFIG =========
     environment {
         APP_NAME    = "myapp"                    // systemd service name: myapp.service
-        APP_SERVER  = "172.31.17.196"            // PRIVATE IP of app server
+        APP_SERVER  = "172.31.25.125"            // PRIVATE IP of app server
         DEPLOY_USER = "deploy"                   // user on app server
         DEPLOY_DIR  = "/opt/myapp"               // directory on app server
         JAR_NAME    = "demo-0.0.1-SNAPSHOT.jar"  // jar file name
